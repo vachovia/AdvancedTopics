@@ -1,4 +1,4 @@
-﻿using AdvancedTopics;
+﻿using AdvancedTopics.Section1;
 using AdvancedTopics.Section2;
 
 // Run in Release mode and Without Debugging
@@ -14,4 +14,8 @@ using AdvancedTopics.Section2;
 // SystemType.Main(args);
 // Inspection.Main(args);
 // Construction.Main(args);
-Invocation.Main(args);
+// Invocation.Main(args);
+// Stock.Main(args);
+// DelegatesAndEvents.Main(args);
+// AttributeDemo.Main(args);
+MyDelegateEvent.Main(args);
