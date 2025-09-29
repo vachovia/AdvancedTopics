@@ -1,5 +1,6 @@
 ﻿using AdvancedTopics.Section1;
 using AdvancedTopics.Section2;
+using AdvancedTopics.Section3;
 
 // Run in Release mode and Without Debugging
 // SpanWithBenchmark.Main(args);
@@ -18,4 +19,7 @@ using AdvancedTopics.Section2;
 // Stock.Main(args);
 // DelegatesAndEvents.Main(args);
 // AttributeDemo.Main(args);
-MyDelegateEvent.Main(args);
+// MyDelegateEvent.Main(args);
+
+// Section 3 examples
+DynamicObjectExample.Main(args);
