@@ -5,7 +5,7 @@ namespace AdvancedTopics.Section3
 {
     public class DynamicObjectExample
     {
-        public const string xml = @"
+        const string xml = @"
             <people>
                 <employees>
                     <person name='Vlad'/>

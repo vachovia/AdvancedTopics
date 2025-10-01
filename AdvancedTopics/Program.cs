@@ -11,7 +11,8 @@ using AdvancedTopics.Section3;
 // Yield return example
 // YeldReturn.Main(args);
 
-// Section 2 examples
+/***************** Section 2 examples *****************/
+
 // SystemType.Main(args);
 // Inspection.Main(args);
 // Construction.Main(args);
@@ -21,5 +22,8 @@ using AdvancedTopics.Section3;
 // AttributeDemo.Main(args);
 // MyDelegateEvent.Main(args);
 
-// Section 3 examples
-DynamicObjectExample.Main(args);
+/***************** Section 3 examples *****************/
+
+// DynamicObjectExample.Main(args);
+// ExpandoObjectExample.Main(args);
+DynamicVisitorDemo.Main(args);
