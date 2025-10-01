@@ -6,24 +6,21 @@ namespace AdvancedTopics.Section3
     {
         public static void Main(string[] args)
         {
-            //var e = new Addition(
-            //    new Addition(new Literal(1), new Literal(2)),
-            //    new Literal(3)
-            //); // if we use Expression e then dynamic cast is required
             Expression e = new Addition(
                 new Addition(new Literal(1), new Literal(2)),
                 new Literal(3)
             );
 
             var sb = new StringBuilder();
-            ExpressionPrinter.Print((dynamic)e, sb); // dynamic dispatching
+
+            // dynamic dispatching
+            ExpressionPrinter.Print((dynamic)e, sb);            
             Console.WriteLine(sb);
         }
     }
 
     public abstract class Expression
     {
-
     }
 
     public class Literal : Expression
