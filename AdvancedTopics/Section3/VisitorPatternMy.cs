@@ -19,8 +19,9 @@ namespace AdvancedTopics.Section31
 
             var sb = new StringBuilder();
 
-            // dynamic dispatching
-            ExpressionPrinter.Print((dynamic)x3, sb);            
+            // dynamic dispatching - dynamically decides to call the right Print method
+            ExpressionPrinter.Print((dynamic)x3, sb);
+
             Console.WriteLine(sb);
         }
     }
