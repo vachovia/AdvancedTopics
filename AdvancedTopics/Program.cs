@@ -2,6 +2,7 @@
 using AdvancedTopics.Section2;
 using AdvancedTopics.Section3;
 using AdvancedTopics.Section31;
+using AdvancedTopics.Section4;
 
 // Run in Release mode and Without Debugging
 // SpanWithBenchmark.Main(args);
@@ -28,4 +29,8 @@ using AdvancedTopics.Section31;
 // DynamicObjectExample.Main(args);
 // ExpandoObjectExample.Main(args);
 // DynamicVisitorDemo.Main(args);
-DynamicVisitorDemoMy.Main(args);
+// DynamicVisitorDemoMy.Main(args);
+
+/***************** Section 4 examples *****************/
+
+ExtensionMethodsDemo.Main(args);
