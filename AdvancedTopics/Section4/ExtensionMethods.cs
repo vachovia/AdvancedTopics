@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 
 namespace AdvancedTopics.Section4
@@ -35,6 +34,14 @@ namespace AdvancedTopics.Section4
             Console.WriteLine($"Simple call: {calculate(2)}");
             var st = calculate.Measure(2);
             Console.WriteLine($"took {st.ElapsedMilliseconds}msec");
+
+            var when = (day: 7, month: 10, year: 2025);
+            Console.WriteLine($"Tuple instead of Date Time: {when.DMY()}");
+
+            var list1 = new List<int> { 1, 2, 3 };
+            var list2 = new List<int> { 4, 5, 6 };
+            var merged = (list1, list2).Merge();
+            Console.WriteLine($"Tuple of lists merged: {merged[4]}");
         }
     }
 
@@ -112,6 +119,19 @@ namespace AdvancedTopics.Section4
             action(num);
             st.Stop();
             return st;
+        }
+
+        public static DateTime DMY(this (int day, int month, int year) when)
+        {
+            return new DateTime(when.year, when.month, when.day);
+        }
+
+        public static List<T> Merge<T>(this (IList<T> first, IList<T> second) lists)
+        {
+            var result = new List<T>();
+            result.AddRange(lists.first);
+            result.AddRange(lists.second);
+            return result;
         }
     }
 }

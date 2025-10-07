@@ -33,4 +33,6 @@ using AdvancedTopics.Section4;
 
 /***************** Section 4 examples *****************/
 
-ExtensionMethodsDemo.Main(args);
+// ExtensionMethodsDemo.Main(args);
+// ExtensionMethodsDemo1.Main(args);
+ExtensionMethodsDemo2.Main(args);
