@@ -35,4 +35,5 @@ using AdvancedTopics.Section4;
 
 // ExtensionMethodsDemo.Main(args);
 // ExtensionMethodsDemo1.Main(args);
-ExtensionMethodsDemo2.Main(args);
+// ExtensionMethodsDemo2.Main(args);
+ExtensionMethodsDemo3.Main(args);
