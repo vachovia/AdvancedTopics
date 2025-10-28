@@ -23,8 +23,7 @@ namespace AdvancedTopics.Section5
 
             return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
         }
-
-        // we cannot overload method with in keyword, it compiles but gives runtime error ??????????????????
+        
         double MeasureDistance(Point p1,Point p2)
         {
             return 0.0;
@@ -51,11 +50,18 @@ namespace AdvancedTopics.Section5
 
             Console.WriteLine($"Distance between {p1} and {p2} is {dist}");
 
-            dist = demo.MeasureDistance(in p1, new Point()); // we cannot use ref but can use new keyword
+            var distFromOrigin = demo.MeasureDistance(in p1, Point.Origin);
 
-            Console.WriteLine($"Distance between {p1} and origin is {dist}");
+            Point copyOfOrigin = Point.Origin; // copyOfOrigin -> we get by-value copy of origin
 
-            dist = demo.MeasureDistance(p1, p2);
+            // Please uncomment these lines see what is allowed
+            // ref var messWithOrigin = ref Point.Origin; // messWithOrigin -> we get reference to origin point - not possible
+            // ref readonly var messWithOrigin1 = ref Point.Origin; // messWithOrigin -> we get reference to origin point - possible
+            // messWithOrigin1.X = 10; // not possible because messWithOrigin1 is readonly reference
+
+            Console.WriteLine($"Distance between {p1} and origin is {distFromOrigin}");
+
+            dist = demo.MeasureDistance(p1, p2); // it works but we get runtime error if we have both overloads ???
 
             Console.WriteLine($"Distance between {p1} and {p2} is {dist}");
         }
@@ -74,6 +80,10 @@ namespace AdvancedTopics.Section5
         {
             X = Y = 0;
         }
+
+        private static Point origin = new Point();
+        public static ref readonly Point Origin => ref origin; // when we call Point.Origin we get readonly reference to origin point and not copy of it while passing into constructor.
+        // so why we are not expanding memory usage
 
         public override string ToString() => $"({X}, {Y})";
     }
