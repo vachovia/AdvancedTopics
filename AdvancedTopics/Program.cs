@@ -3,6 +3,7 @@ using AdvancedTopics.Section2;
 using AdvancedTopics.Section3;
 using AdvancedTopics.Section31;
 using AdvancedTopics.Section4;
+using AdvancedTopics.Section5;
 
 // Run in Release mode and Without Debugging
 // SpanWithBenchmark.Main(args);
@@ -36,4 +37,9 @@ using AdvancedTopics.Section4;
 // ExtensionMethodsDemo.Main(args);
 // ExtensionMethodsDemo1.Main(args);
 // ExtensionMethodsDemo2.Main(args);
-ExtensionMethodsDemo3.Main(args);
+// ExtensionMethodsDemo3.Main(args);
+
+/***************** Section 5 examples *****************/
+
+// MemoryManagamentDemo.Main(args);
+MemoryManagamentDemo1.Main(args);
