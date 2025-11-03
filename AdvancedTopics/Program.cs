@@ -41,5 +41,6 @@ using AdvancedTopics.Section5;
 
 /***************** Section 5 examples *****************/
 
-MemoryManagamentDemo.Main(args);
+// MemoryManagamentDemo.Main(args);
 // MemoryManagamentDemo1.Main(args);
+MemoryManagamentDemo2.Main(args);
