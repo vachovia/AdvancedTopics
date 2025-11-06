@@ -11,7 +11,7 @@ namespace AdvancedTopics.Section4
             Console.WriteLine(foo.Measure());
 
             Console.WriteLine(foo);
-            Console.WriteLine(ExtensionMethods.ToString(foo)); // calls your extension method
+            Console.WriteLine(DisposableDemo.ToString(foo)); // calls your extension method
             Console.WriteLine(foo.ToString()); // calls predefined ToString()
 
             var derived = new FooDerived();
@@ -66,7 +66,7 @@ namespace AdvancedTopics.Section4
         }
     }
 
-    public static class ExtensionMethods
+    public static class DisposableDemo
     {//    ↑↑↑↑↑↑ must be static
 
         // extension on your own type

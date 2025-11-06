@@ -4,6 +4,8 @@ using AdvancedTopics.Section3;
 using AdvancedTopics.Section31;
 using AdvancedTopics.Section4;
 using AdvancedTopics.Section5;
+using AdvancedTopics.Section6;
+using AdvancedTopics.Section61;
 
 // Run in Release mode and Without Debugging
 // SpanWithBenchmark.Main(args);
@@ -43,4 +45,11 @@ using AdvancedTopics.Section5;
 
 // MemoryManagamentDemo.Main(args);
 // MemoryManagamentDemo1.Main(args);
-MemoryManagamentDemo2.Main(args);
+// MemoryManagamentDemo2.Main(args);
+
+/***************** Section 6 examples *****************/
+
+// DisposableExample.Main(args);
+// DuckTypingMixins.Main(args);
+// ContinuationPassingStyle.Main(args);
+ContinuationPassingStyleImprooved.Main(args);
