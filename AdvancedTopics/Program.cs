@@ -52,4 +52,16 @@ using AdvancedTopics.Section61;
 // DisposableExample.Main(args);
 // DuckTypingMixins.Main(args);
 // ContinuationPassingStyle.Main(args);
-ContinuationPassingStyleImprooved.Main(args);
+// ContinuationPassingStyleImprooved.Main(args);
+LocalInversionOfControl.Main(args);
+
+
+
+
+
+
+
+
+
+
+// https://github.com/PacktPublishing/Advanced-CSharp-Programming
